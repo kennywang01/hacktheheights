@@ -25,9 +25,11 @@ client = gspread.authorize(creds)
 
 accouncement_sheet = client.open("HTH6_Announcements").sheet1  # Open the spreadhseet
 schedule_sheet = client.open("HTH6_Announcements").worksheet('sheet2')
+happeningNow_sheet = client.open("HTH6_Announcements").worksheet('sheet3')
 
 announcement_data = accouncement_sheet.get_all_records()  # Get a list of all records
 schedule_data = schedule_sheet.get_all_records()
+happeningNow_data = happeningNow_sheet.get_all_records()
 
 with open(os.path.join("sheets/announcements.json"), 'w') as fout:
     json.dump(announcement_data, fout)
@@ -35,5 +37,10 @@ with open(os.path.join("sheets/announcements.json"), 'w') as fout:
 with open(os.path.join("sheets/schedule.json"), 'w') as fout:
     json.dump(schedule_data, fout)
 
-#pprint(announcement_data)
-#pprint(schedule_data)
+with open(os.path.join("sheets/happeningNow.json"), 'w') as fout:
+    json.dump(happeningNow_data, fout)
+
+
+pprint(announcement_data)
+pprint(schedule_data)
+pprint(happeningNow_data)

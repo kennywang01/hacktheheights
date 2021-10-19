@@ -1,0 +1,30 @@
+{
+  "name": "hacktheheights",
+  "version": "1.0.0",
+  "description": "Website for Hack the Heights 6",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennywang01/hacktheheights.git"
+  },
+  "keywords": [
+    "hacktheheights"
+  ],
+  "author": "Kenneth Wang",
+  "license": "MIT ",
+  "bugs": {
+    "url": "https://github.com/kennywang01/hacktheheights/issues"
+  },
+  "homepage": "https://github.com/kennywang01/hacktheheights#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "googleapis": "^89.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}

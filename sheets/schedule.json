@@ -1,1 +1,1 @@
-[{"id": 1, "day": "Sat", "time": "1:00 PM", "event": "Come to Cuba", "description": "it'll be fun"}]
+[{"id": 1, "day": "Sat", "time_begin": "1:00 PM", "time_end": "2:00 PM", "title": "Come to Cuba", "description": "It will be fun"}]
